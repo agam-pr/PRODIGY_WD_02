@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -25,6 +25,12 @@ header {
   align-items: center;
   padding: 30px 100px;
   z-index: 10;
+}
+
+header.scrolled {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  transition: background 0.3s ease;
 }
 
 .logo {
@@ -408,3 +414,13 @@ header {
         margin-left: auto;
     }
   }
+
+
+
+
+  /* SCROLLED HEADER EFFECT */
+header.scrolled {
+  background: rgba(0, 0, 0, 0.8); /* semi-transparent dark */
+  backdrop-filter: blur(8px);
+  transition: background 0.3s ease;
+}

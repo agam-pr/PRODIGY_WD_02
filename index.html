@@ -11,14 +11,14 @@
 <body>
     <header>
         <a href="#" class="logo">iMovies</a>
-        <ul class="nav">
-            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
-            </li>
-            <li><a href="#">Adults</a></li>
-            <li><a href="#">Kids</a></li>
-            <li><a href="#">Trend</a></li>
-            <li><a href="#">My List</a></li>
-        </ul>
+           <ul class="nav">
+               <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+               </li>
+               <li><a href="#">Adults</a></li>
+               <li><a href="#">Kids</a></li>
+               <li><a href="#">Trend</a></li>
+               <li><a href="#">My List</a></li>
+           </ul>
         <div class="search">
             <input type="text" placeholder="Search" />
             <i class="fa fa-search" aria-hidden="true"></i>
@@ -143,9 +143,25 @@
     <div class="trailer">
 
     </div>
+    
+    <section style="height: 200px"></section>; 
+    <!-- checking SCROLL-BASED STYLE CHANGE by giving some fake heights-->
+
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        // Scroll listener for header style change
+        window.addEventListener('scroll', function() {
+          const header = document.querySelector('header');
+          if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+        });
+      </script>
+
     <script>
         $(document).ready(function(){
     $('.carousel').carousel();
