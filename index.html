@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel= "stylesheet" href="./css/main.css" />
+    <title>Movie Website | Animated Landing Page</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">iMovies</a>
+        <ul class="nav">
+            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#">Adults</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Trend</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search" />
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="content the-little-mermaid active">
+            <img src="./images/the-little-mermaid-title.png" alt="" class="movie-title" />
+            <h4>
+                <span>2024</span><span><i>12+</i></span><span>2 hours 14 min</span>
+                <span>Romance</span>
+            </h4>
+            <p>
+                Dive into a magical underwater kingdom where a curious young mermaid longs to experience the world above the waves. This live-action reimagining blends stunning visuals, unforgettable songs, heartfelt adventure and a fresh emotional depth that celebrates courage, sacrifice, and the power of following your dreams.
+            </p>
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+            </div>
+        </div>
+
+        <div class="content bg-65">
+            <img src="./images/the-65-title.png" alt="" class="movie-title" />
+            <h4>
+                <span>2023</span><span><i>15+</i></span><span>1h 33min</span>
+                <span>Action</span>
+            </h4>
+            <p>
+                After a catastrophic crash on a mysterious planet, a pilot and a young passenger must fight for survival — only to discover they’re not alone. A pulse-pounding sci-fi thriller with dinosaurs and jaw-dropping action that fuses tense survival drama with breathtaking prehistoric encounters, keeping you on edge from start to finish.
+            </p>
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+            </div>
+        </div>
+
+        <div class="content the-covenant">
+            <img src="./images/the-covenant-title.png" alt="" class="movie-title" />
+            <h4>
+                <span>2023</span><span><i>12+</i></span><span>2h 03min</span>
+                <span>War/Action</span>
+            </h4>
+            <p>
+                From director Guy Ritchie comes a gripping tale of courage and loyalty. A U.S. soldier and his Afghan interpreter forge an unbreakable bond on the battlefield, risking everything to protect one another. Packed with emotional intensity, tactical realism, and a powerful sense of honor, it’s a must-watch story of sacrifice.
+
+            </p>
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+            </div>
+        </div>
+
+        <div class="content the-tank">
+            <img src="./images/the-tank-title.png" alt="" class="movie-title" />
+            <h4>
+                <span>2023</span><span><i>15+</i></span><span>1h 40min</span>
+                <span>Horror</span>
+            </h4>
+            <p>
+                A family inherits a long-abandoned coastal property — and unlocks a dark secret lurking below. Atmospheric, suspenseful, and filled with creature-feature chills, this is survival horror at its best with claustrophobic tension, mysterious legends, and relentless fear that grows more terrifying the deeper they descend into the unknown.
+
+
+            </p>
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+            </div>
+        </div>
+
+        <div class="content the-black-demon">
+            <img src="./images/the-black-demon-title.png" alt="" class="movie-title" />
+            <h4>
+                <span>2023</span><span><i>16+</i></span><span>1h 40min</span>
+                <span>Thriller</span>
+            </h4>
+            <p>
+                An oil inspector and his family find themselves trapped on a decaying offshore rig… and hunted by a massive, legendary shark. Tense, high-stakes survival against a terrifying force of nature delivers nail-biting action, environmental intrigue, and a heart-stopping battle between humanity’s hubris and a mythic predator’s fury.
+
+            </p>
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+            </div>
+        </div>
+
+        <div class="carousel-box">
+            <div class="carousel">
+                <div class="carousel-item"
+                onClick="changeBg('bg-little-mermaid.jpg', 'the-little-mermaid');"
+                >
+                    <img src="./images/movies/the-little-mermaid.jpg" alt="">
+                </div>
+                <div class="carousel-item"
+                onClick="changeBg('bg-65.jpg', 'bg-65');"
+                >
+                    <img src="./images/movies/65.jpg" alt="">
+                </div>
+                <div class="carousel-item"
+                onClick="changeBg('bg-the-covenant.jpg','the-covenant');"
+                >
+                    <img src="./images/movies/the-covenant.jpg" alt="">
+                </div>
+                <div class="carousel-item"
+                onClick="changeBg('bg-the-tank.jpg','the-tank');"
+                >
+                    <img src="./images/movies/the-tank.jpg" alt="">
+                </div>
+                <div class="carousel-item"
+                onClick="changeBg('bg-the-black-demon.jpg','the-black-demon');"
+                >
+                    <img src="./images/movies/the-black-demon.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <a href="#" class="play"><i class="fa-regular fa-circle-play" aria-hidden="true"></i> Watch Trailer</a>
+        <ul class="sci">
+            <li><a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <div class="trailer">
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+    $('.carousel').carousel();
+
+    changeBg('bg-little-mermaid.jpg', 'the-little-mermaid');
+    setInterval(function() {
+      $('.carousel').carousel('next');
+    }, 3000);
+  });
+    </script>
+
+</body>
+</html>
